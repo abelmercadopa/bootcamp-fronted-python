@@ -7,4 +7,7 @@ git condig --global user.email "corre@ejemplo.com2
 * git status : para ver el estado de mostrar repositorp
 * git add .
 * git commit -m "subir archivos de la primera semana"
+* git log
+g
+g
 
