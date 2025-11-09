@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abel Mercado Palomino - Página Personal</title>
+  <style>
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #0b1220; color: #e2e8f0;
+    }
+    header{
+      text-align: center; padding: 20px; background: #101828;
+    }
+    header h1{ color: #38bdf8; margin: 0; }
+    nav{
+      background: #132138; text-align: center; padding: 10px 0;
+    }
+    nav a{
+      color: #22d3ee; margin: 0 15px; text-decoration: none; font-weight: bold;
+    }
+    nav a:hover{ text-decoration: underline; }
+    main{ max-width: 800px; margin: auto; padding: 20px; }
+    section{ margin-bottom: 30px; }
+    h2{ color: #38bdf8; border-bottom: 2px solid #38bdf8; display: inline-block; }
+    .btn{
+      display: inline-block; padding: 10px 16px; border-radius: 10px;
+      background: linear-gradient(135deg,#38bdf8,#22d3ee); color: #03111a; font-weight: bold;
+    }
+    .foto{
+      width: 150px; height: 150px; border-radius: 50%;
+      border: 3px solid #38bdf8; object-fit: cover; margin-top: 15px;
+    }
+    footer{
+      text-align: center; padding: 20px; background: #101828; color: #94a3b8;
+    }
+    ul{line-height: 1.8;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Abel Mercado Palomino</h1>
+  <p>Ingeniero Electrónico | Desarrollador Web con Python</p>
+  <img src="foto.jpg" alt="Foto de Abel Mercado Palomino" class="foto" />
+</header>
+
+<nav>
+  <a href="#sobre-mi">Sobre mí</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#proyectos">Proyectos</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main>
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy <strong>ingeniero electrónico</strong> con experiencia en control de procesos y desarrollo web.  
+      Me apasiona crear soluciones que combinen hardware, software y automatización industrial.  
+      Actualmente enfocado en desarrollo con <strong>Python</strong>, <strong>HTML</strong> y <strong>JavaScript</strong>.
+    </p>
+  </section>
+
+  <section id="habilidades">
+    <h2>Habilidades</h2>
+    <ul>
+      <li>Python (FastAPI, Flask)</li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Control de procesos y SCADA</li>
+      <li>Git, Docker y Linux</li>
+    </ul>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <p>
+      💧 <strong>SCADA Web:</strong> Simulación de tanque con sensores y válvulas controladas por una interfaz web.<br>
+      🧮 <strong>Dashboard de procesos:</strong> Visualización en tiempo real de datos industriales con Python.
+    </p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <a href="mailto:abel.mercado@example.com" style="color:#00a6ff;">abel.mercado@example.com</a></p>
+    <p><a class="btn" href="mailto:abel.mercado@example.com">Enviar mensaje</a></p>
+  </section>
+</main>
+
+<footer>
+  © <span id="year"></span> Abel Mercado Palomino
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
